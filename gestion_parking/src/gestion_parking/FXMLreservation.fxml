@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_parking.FXMLreservationController">
+   <children>
+      <TextField fx:id="tfidrsv" layoutX="96.0" layoutY="27.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="tfidusr" layoutX="95.0" layoutY="86.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="tfidprk" layoutX="96.0" layoutY="139.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="tfdte" layoutX="96.0" layoutY="200.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label fx:id="lidrsv" layoutX="9.0" layoutY="31.0" prefHeight="17.0" prefWidth="98.0" text="Id_Reservation_Parking:" />
+      <Label fx:id="lidusr" layoutX="16.0" layoutY="90.0" text="Id:" />
+      <Label fx:id="lidprk" layoutX="23.0" layoutY="143.0" text="Id_Parking:" />
+      <Label fx:id="ldte" layoutX="19.0" layoutY="204.0" text="Date_Début:" />
+      <Button layoutX="16.0" layoutY="298.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="25.0" prefWidth="72.0" text="Ajouter" />
+      <Button layoutX="114.0" layoutY="298.0" mnemonicParsing="false" onAction="#ModifierReservation" prefHeight="25.0" prefWidth="66.0" text="Modifier" />
+      <Button layoutX="16.0" layoutY="350.0" mnemonicParsing="false" onAction="#SupprimerReservation" text="Supprimer" />
+      <Button layoutX="114.0" layoutY="350.0" mnemonicParsing="false" onAction="#reload" prefHeight="25.0" prefWidth="66.0" text="Afficher" />
+      <TextField fx:id="tfdtef" layoutX="96.0" layoutY="254.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label fx:id="ldtef" layoutX="21.0" layoutY="258.0" text="Date_fin:" />
+      <TableView fx:id="tvfoxes" layoutX="205.0" layoutY="25.0" prefHeight="358.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="colidrsvp" prefWidth="81.0" text="C1" />
+          <TableColumn fx:id="colidusr" prefWidth="76.0" text="C2" />
+            <TableColumn fx:id="colidp" prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="coldte" prefWidth="77.0" text="C2" />
+            <TableColumn fx:id="coldtef" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
