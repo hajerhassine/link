@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.FXMLDocumentController">
+   <children>
+      <Label layoutX="71.0" layoutY="100.0" text="id" />
+      <Label layoutX="62.0" layoutY="169.0" text="nom" />
+      <TextField fx:id="tfidcat" layoutX="136.0" layoutY="96.0" />
+      <TextField fx:id="tfnomcat" layoutX="136.0" layoutY="165.0" />
+      <Button fx:id="bntajouter" layoutX="30.0" layoutY="246.0" mnemonicParsing="false" onAction="#AjouterCategorie" style="-fx-background-color: #eda678; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Ajouter" />
+      <Button fx:id="btnmore" layoutX="134.0" layoutY="321.0" mnemonicParsing="false" onAction="#More" style="-fx-background-color: #eda678; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Autre option" />
+      <Button fx:id="bntsupprimer" layoutX="249.0" layoutY="247.0" mnemonicParsing="false" onAction="#SupprimerCtaegorie" style="-fx-background-color: #eda678; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Supprimer" />
+      <TableView fx:id="tvcat" layoutX="383.0" layoutY="54.0" prefHeight="354.0" prefWidth="303.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="162.39996337890625" text="id" />
+          <TableColumn fx:id="colnom" prefWidth="140.0" text="nom" />
+        </columns>
+      </TableView>
+      <Button fx:id="bntafficher" layoutX="136.0" layoutY="246.0" mnemonicParsing="false" onAction="#reload" style="-fx-background-color: #eda678; -fx-background-radius: 5cm; -fx-border-radius: 5cm;" text="Afficher" />
+   </children>
+</AnchorPane>
